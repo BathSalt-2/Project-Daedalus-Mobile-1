@@ -1,0 +1,16 @@
+<ActionBar title="AI Chat"></ActionBar>
+
+<GridLayout rows="*, auto">
+  <ListView [items]="messages" row="0">
+    <ng-template let-item="item">
+      <StackLayout [class]="item.isAiResponse ? 'ai-message' : 'user-message'" class="p-2 m-2">
+        <Label [text]="item.text" textWrap="true"></Label>
+      </StackLayout>
+    </ng-template>
+  </ListView>
+  
+  <GridLayout rows="auto" columns="*, auto" row="1" class="p-2">
+    <TextField [(ngModel)]="newMessage" hint="Type a message..." row="0" col="0"></TextField>
+    <Button text="Send" (tap)="sendMessage()" row="0" col="1"></Button>
+  </GridLayout>
+</GridLayout>

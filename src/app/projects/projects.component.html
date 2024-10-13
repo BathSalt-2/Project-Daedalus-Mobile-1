@@ -1,0 +1,14 @@
+<ActionBar title="Projects"></ActionBar>
+
+<GridLayout rows="auto, *">
+  <Button text="Create New Project" (tap)="createProject()" row="0" class="btn btn-primary m-2"></Button>
+  
+  <ListView [items]="projects" row="1">
+    <ng-template let-item="item">
+      <StackLayout class="p-2 m-2">
+        <Label [text]="item.title" class="font-bold"></Label>
+        <Label [text]="item.description" textWrap="true"></Label>
+      </StackLayout>
+    </ng-template>
+  </ListView>
+</GridLayout>
