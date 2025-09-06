@@ -13,6 +13,7 @@ Welcome to Project Daedalus, an innovative mobile app that combines AI-driven co
 ## 🛠️ Tech Stack
 
 - NativeScript with Angular
+- Tailwind CSS for styling
 - Firebase (Authentication, Realtime Database, Storage)
 - Hugging Face API for AI integration (coming soon!)
 
@@ -27,44 +28,47 @@ Welcome to Project Daedalus, an innovative mobile app that combines AI-driven co
 ### Installation
 
 1. Clone the repository:
-   ```
-   git clone https://github.com/your-username/project-daedalus.git
+   ```bash
+   git clone https://github.com/BathSalt-2/Project-Daedalus-Mobile-1.git
    ```
 
 2. Navigate to the project directory:
-   ```
-   cd project-daedalus
+   ```bash
+   cd Project-Daedalus-Mobile-1
    ```
 
 3. Install dependencies:
-   ```
+   ```bash
    npm install
    ```
 
 4. Run the app:
    - For iOS:
-     ```
+     ```bash
      ns run ios
      ```
    - For Android:
-     ```
+     ```bash
      ns run android
      ```
 
 ## 🗺️ Project Structure
 
-```
+```plaintext
 src/
 ├── app/
-│   ├── home/
 │   ├── chat/
+│   ├── home/
+│   ├── item/
 │   ├── projects/
 │   ├── services/
+│   ├── app.component.html
 │   ├── app.component.ts
 │   ├── app.module.ts
 │   └── app-routing.module.ts
-├── assets/
-└── main.ts
+├── app.css
+├── main.ts
+└── polyfills.ts
 ```
 
 ## 🔮 Future Enhancements
@@ -76,11 +80,7 @@ src/
 
 ## 🤝 Contributing
 
-We welcome contributions to Project Daedalus! Please check out our [Contributing Guidelines](CONTRIBUTING.md) for more information on how to get started.
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Contributions are welcome! Feel free to open issues or submit pull requests to improve the project.
 
 ## 🙏 Acknowledgments
 
@@ -90,6 +90,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-For any questions or feedback, please reach out to us at daedalus@example.com or open an issue in this repository.
+For any questions or feedback, please open an issue in this repository.
 
 Happy coding with Project Daedalus! 🚀✨
