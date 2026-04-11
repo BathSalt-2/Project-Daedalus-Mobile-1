@@ -1,95 +1,132 @@
-# 🚀 Project Daedalus Mobile App
+```
+███╗   ███╗ ██████╗ ██████╗ ██╗██╗     ███████╗    ██╗   ██╗ ██╗
+████╗ ████║██╔═══██╗██╔══██╗██║██║     ██╔════╝    ██║   ██║███║
+██╔████╔██║██║   ██║██████╔╝██║██║     █████╗      ██║   ██║╚██║
+██║╚██╔╝██║██║   ██║██╔══██╗██║██║     ██╔══╝      ╚██╗ ██╔╝ ██║
+██║ ╚═╝ ██║╚██████╔╝██████╔╝██║███████╗███████╗     ╚████╔╝  ██║
+╚═╝     ╚═╝ ╚═════╝ ╚═════╝ ╚═╝╚══════╝╚══════╝      ╚═══╝   ╚═╝
+      Project Daedalus Mobile v1.0 · Or4cl3 AI Solutions
+```
 
-Welcome to Project Daedalus, an innovative mobile app that combines AI-driven coding and creative project capabilities! 🎨💻
+# Project Daedalus Mobile v1.0
+### AI-Driven Mobile Platform — NativeScript TypeScript
 
-## 🌟 Features
+[![Version](https://img.shields.io/badge/version-1.0-7c3aed.svg)](https://github.com/BathSalt-2/Project-Daedalus-Mobile-1)
+[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![NativeScript](https://img.shields.io/badge/NativeScript-8.x-65adf1.svg)](https://nativescript.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178c6.svg)](https://www.typescriptlang.org/)
 
-- 🤖 AI-powered chat interface for code generation and creative assistance
-- 📁 Project management system for organizing your ideas
-- 🔐 Secure authentication using Firebase
-- 💾 Real-time data synchronization
-- 📱 Cross-platform support (iOS and Android)
+> *"AI-driven mobile intelligence — code, create, and evolve on the go."*
 
-## 🛠️ Tech Stack
+🐙 **GitHub**: [github.com/BathSalt-2/Project-Daedalus-Mobile-1](https://github.com/BathSalt-2/Project-Daedalus-Mobile-1)
 
-- NativeScript with Angular
-- Tailwind CSS for styling
-- Firebase (Authentication, Realtime Database, Storage)
-- Hugging Face API for AI integration (coming soon!)
+---
 
-## 🚀 Getting Started
+## 🧠 Overview
+
+Project Daedalus Mobile v1.0 is an **AI-driven mobile platform** combining intelligent coding assistance with creative project management. Built with NativeScript and TypeScript, it brings Daedalus AI capabilities to native iOS and Android applications.
+
+**Built by [Or4cl3 AI Solutions](https://github.com/BathSalt-2)**
+
+---
+
+## ✨ Features
+
+- 🤖 **AI Coding Assistant** — Context-aware code generation and debugging
+- 🎨 **Creative Project Management** — AI-powered project planning and ideation
+- 📱 **Native Performance** — True native iOS & Android via NativeScript
+- 🔒 **On-Device Privacy** — Sensitive processing stays on device
+- ⚡ **TypeScript First** — Full type safety across the entire codebase
+- 🧬 **Daedalus Core Integration** — Access ERPS and Σ-Matrix features on mobile
+
+---
+
+## 🚀 Installation
 
 ### Prerequisites
 
-- Node.js (LTS version)
-- NativeScript CLI
-- iOS and/or Android development environment set up
+- Node.js 18+
+- NativeScript CLI: `npm install -g @nativescript/cli`
+- iOS: Xcode 14+ (macOS only)
+- Android: Android Studio + Android SDK
 
-### Installation
+### Quick Start
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/BathSalt-2/Project-Daedalus-Mobile-1.git
-   ```
+```bash
+# Clone the repository
+git clone https://github.com/BathSalt-2/Project-Daedalus-Mobile-1.git
+cd Project-Daedalus-Mobile-1
 
-2. Navigate to the project directory:
-   ```bash
-   cd Project-Daedalus-Mobile-1
-   ```
+# Install dependencies
+npm install
 
-3. Install dependencies:
-   ```bash
-   npm install
-   ```
+# Run on iOS
+ns run ios
 
-4. Run the app:
-   - For iOS:
-     ```bash
-     ns run ios
-     ```
-   - For Android:
-     ```bash
-     ns run android
-     ```
+# Run on Android
+ns run android
 
-## 🗺️ Project Structure
+# Build for production (iOS)
+ns build ios --release
 
-```plaintext
-src/
-├── app/
-│   ├── chat/
-│   ├── home/
-│   ├── item/
-│   ├── projects/
-│   ├── services/
-│   ├── app.component.html
-│   ├── app.component.ts
-│   ├── app.module.ts
-│   └── app-routing.module.ts
-├── app.css
-├── main.ts
-└── polyfills.ts
+# Build for production (Android)
+ns build android --release
 ```
 
-## 🔮 Future Enhancements
+---
 
-- Implement Hugging Face API for advanced AI capabilities
-- Add offline support and local caching
-- Introduce AR/VR features for creative outputs
-- Enhance real-time collaboration features
+## 📁 Project Structure
+
+```
+Project-Daedalus-Mobile-1/
+├── app/
+│   ├── components/          # UI components
+│   ├── services/            # AI service integrations
+│   ├── models/              # TypeScript interfaces & models
+│   ├── views/               # Page views
+│   └── app.ts               # Application entry
+├── App_Resources/
+│   ├── iOS/                 # iOS native resources
+│   └── Android/             # Android native resources
+├── package.json
+└── tsconfig.json
+```
+
+---
+
+## ⚙️ Configuration
+
+```typescript
+// app/config.ts
+export const config = {
+  AI_ENDPOINT: process.env.AI_ENDPOINT || 'https://api.groq.com',
+  DAEDALUS_MODE: 'observer',
+  ERPS_THRESHOLD: 0.25,
+};
+```
+
+---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Feel free to open issues or submit pull requests to improve the project.
+```bash
+git clone https://github.com/BathSalt-2/Project-Daedalus-Mobile-1.git
+npm install
+ns run ios  # or android
+```
 
-## 🙏 Acknowledgments
+---
 
-- NativeScript team for their awesome framework
-- Firebase for providing robust backend services
-- Hugging Face for their cutting-edge AI models
+## 📄 License
 
-## 📞 Contact
+MIT License · See [LICENSE](LICENSE)
 
-For any questions or feedback, please open an issue in this repository.
+---
 
-Happy coding with Project Daedalus! 🚀✨
+<div align="center">
+
+**[Or4cl3 AI Solutions](https://github.com/BathSalt-2)** · Project Daedalus Mobile v1.0
+
+*Daedalus AI · Native Mobile · TypeScript*
+
+</div>
